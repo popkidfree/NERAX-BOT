@@ -1,12 +1,12 @@
 {
-  "name": "NERAX BOT",
+  "name": "NERAX-BOT",
   "version": "4.5.0",
   "description": "A WhatsApp Bot Created By POPKID",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name NERAX BOT",
-    "stop": "pm2 stop NERAX BOT",
-    "restart": "pm2 restart NERAX BOT"
+    "start": "pm2 start index.js --deep-monitoring --attach --name NERAX-BOT",
+    "stop": "pm2 stop NERAX-BOT",
+    "restart": "pm2 restart NERAX-BOT"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "latest",
