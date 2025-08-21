@@ -1,0 +1,203 @@
+{
+  "name": "NERAX-MD",
+  "description": "⚡ Stylish WhatsApp Bot Powered By POPKID ⚡",
+  "logo": "https://files.catbox.moe/i4blgt.jpg",
+  "keywords": ["NERAX-MD", "WhatsApp-Bot", "POPKID"],
+  "success_url": "/",
+  "stack": "container",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "🔥 Enter your SESSION_ID here to activate NERAX BOT.",
+      "required": true,
+      "value": ""
+    },  
+
+    "STICKER_NAME": {
+      "description": "✨ Set your sticker pack name.",
+      "required": false,
+      "value": "NERAX"
+    }, 
+
+    "PREFIX": {
+      "description": "⚡ Bot prefix (do not leave empty).",
+      "required": false,
+      "value": "."
+    },
+    
+    "MODE": {
+      "description": "🌐 Choose mode: public / private / inbox / group.",
+      "required": false,
+      "value": "public"
+    },
+
+    "ANTI_DELETE": {
+      "description": "👀 true = show deleted messages.",
+      "required": false,
+      "value": "true"  
+    },
+    
+    "ALWAYS_ONLINE": {
+      "description": "⏳ true = always online mode.",
+      "required": false,
+      "value": "false"  
+    },    
+   
+    "AUTO_REPLY": {
+      "description": "🤖 true = automatic text replies enabled.",
+      "required": false,
+      "value": "false"
+    }, 
+
+    "AUTO_STICKER": {
+      "description": "🎭 true = auto convert images to sticker.",
+      "required": false,
+      "value": "false"
+    }, 
+
+    "AUTO_STATUS_SEEN": {
+      "description": "👁 true = auto view all statuses.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "AUTO_STATUS_REACT": {
+      "description": "💖 true = auto react on statuses.",
+      "required": true,
+      "value": "true"
+    }, 
+
+    "AUTO_STATUS_REPLY": {
+      "description": "💬 true = reply automatically to status updates.",
+      "required": true,
+      "value": "false"
+    }, 
+
+    "AUTO_STATUS_MSG": {
+      "description": "📝 Custom reply message for statuses.",
+      "required": true,
+      "value": "*👀 SEEN YOUR STATUS BY NERAX BOT 🤍*"
+    }, 
+    
+    "OWNER_NAME": {
+      "description": "👑 Your name as bot owner.",
+      "required": false,
+      "value": "POPKID"
+    }, 
+
+    "OWNER_NUMBER": {
+      "description": "📞 Enter your WhatsApp number with country code.",
+      "required": false,
+      "value": "254111385747"
+    }, 
+
+    "BOT_NAME": {
+      "description": "🤖 Set the display name for your bot.",
+      "required": false,
+      "value": "NERAX BOT"
+    }, 
+
+    "ANTI_LINK": {
+      "description": "🔗 true = remove group links automatically.",
+      "required": true,
+      "value": "true"
+    },
+
+    "ANTI_LINK_KICK": {
+      "description": "⚠️ true = remove + kick members who send links.",
+      "required": true,
+      "value": "false"
+    },
+    
+    "ANTI_BAD": {
+      "description": "🚫 true = delete bad words automatically.",
+      "required": false,
+      "value": "false"
+    },
+
+    "MENTION_REPLY": {
+      "description": "🔔 true = reply when someone mentions you.",
+      "required": false,
+      "value": "false"
+    },
+    
+    "MENU_IMAGE_URL": {
+      "description": "🖼 Custom image URL for menu & replies.",
+      "required": false,
+      "value": "https://files.catbox.moe/ke8nul.jpg"
+    },
+    
+    "DESCRIPTION": {
+      "description": "✨ Custom caption/credit for menu & features.",
+      "required": false,
+      "value": "*© Powered By POPKID ⚡*"
+    },
+
+    "DELETE_LINKS": {
+      "description": "🧹 Remove links from group (without removing members).",
+      "required": false,
+      "value": "false"
+    },
+    
+    "AUTO_RECORDING": {
+      "description": "🎙 true = show auto recording status.",
+      "required": false,
+      "value": "true"
+    },
+
+    "AUTO_TYPING": {
+      "description": "⌨️ true = show auto typing status.",
+      "required": false,
+      "value": "false"
+    },
+
+    "AUTO_REACT": {
+      "description": "💫 true = react on every message.",
+      "required": false,
+      "value": "false"
+    },
+    
+    "CUSTOM_REACT": {
+      "description": "🌈 true = enable custom emoji reactions.",
+      "required": false,
+      "value": "false"
+    }, 
+    
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "🎉 Add your custom reaction emojis separated by commas.",
+      "required": false,
+      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
+    }, 
+    
+    "ANTI_DEL_PATH": {
+      "description": "📩 'same' = resend deleted msg in same chat, 'inbox' = inbox.",
+      "required": false,
+      "value": "inbox"
+    }, 
+
+    "ADMIN_EVENTS": {
+      "description": "⚡ true = notify when members are promoted/demoted.",
+      "required": false,
+      "value": "false"
+    },
+
+    "WELCOME": {
+      "description": "🎉 true = send welcome/goodbye messages in groups.",
+      "required": false,
+      "value": "true"
+    },
+
+    "READ_MESSAGE": {
+      "description": "👁 true = automatically mark all messages as read.",
+      "required": false,
+      "value": "false"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
