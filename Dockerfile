@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to run the app
-CMD ["pm2-rumtime", "index.js"]
+CMD ["npm", "start"]
